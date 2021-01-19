@@ -16,7 +16,7 @@
                             <div class="form-group col-md-5 phone">
                                 <input type="tel" placeholder="Телефон">
                             </div>
-                            <div class="form-group col-md-4 button">
+                            <div class="form-group col-md-5 button">
                                 <button class="contact-button">Перезвоните мне</button>
                             </div>
                             <div class="form-group col-md-4 icons">
@@ -66,7 +66,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     footer { 
-        padding: 60px 172px 85px 204px;
+        padding: 60px 10px;
         background-color: #2E3A59;
     }
 
@@ -89,6 +89,7 @@ export default {
         width: 90%;
         display: flex;
         justify-content: space-between;
+        padding-left: 15px;
     }
 
     .connection { 

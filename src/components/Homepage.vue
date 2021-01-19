@@ -3,9 +3,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 col-xs-5 soft-boost">
-                <div class="image-block">
-                    <img src="../assets/images/Rectangle_20.png" alt="soft-boost">
-                </div>
+              <div class="digital-black-blocks">
+                <div class="black-block-1">Soft</div>
+                <div class="black-block-2">boost</div>
+              </div>
             </div>
             <div class="col-md-7 col-xs-7 digital">
                 <div class="digital-text"><span>Цифровое сердце <span class="yellow">вашего бизнеса</span></span></div>
@@ -37,6 +38,15 @@ export default {
     padding: 150px 0;
   }
 
+  .digital-text {
+    width: 665px;
+  }
+
+  .soft-boost {
+    display: flex;
+    align-items: center;
+  }
+
   .digital-text span { 
     font-size: 60px;
     font-weight: 700;
@@ -64,5 +74,45 @@ export default {
     background-color: #F5DF4D;
     border: 1px solid #F5DF4D;
     border-radius: 0;
+  }
+
+  .digital-black-blocks {
+    position: relative;
+    width: 400px;
+    height: 200px;
+  }
+
+  .black-block-1 {
+    width: 205px;
+    height: 74px;
+    background-color: #000;
+    position: absolute;
+    left: 4px;
+    top: -5px;
+    transform: rotate(-12deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .black-block-2 {
+    width: 355px;
+    height: 100px;
+    position: absolute;
+    right: 69px;
+    top: 69px;
+    background-color: #000;
+    transform: rotate(17deg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 80px;
+    font-weight: 700;
   }
 </style>

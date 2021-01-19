@@ -35,8 +35,8 @@
                 </div>
                 <div class="col-md-4 col-xs-4 image">
                     <div class="contact-form-corner">
-                        <div class="corner-top">Soft</div>
-                        <div class="corner-bottom">Boost</div>
+                        <div class="corner-top black-block-1">Soft</div>
+                        <div class="corner-bottom black-block-2">Boost</div>
                     </div>
                     <!-- <div class="contact-form-image">
                         <img src="../assets/images/black-2.png" alt="soft-boost">
@@ -60,7 +60,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .section-contact-form { 
-        padding: 60px 172px 72px 61px;
+        padding: 60px 10px;
         background-color: #2E3A59;
         background-image: url('../assets/images/Vector2.png');
         background-repeat: no-repeat;
@@ -123,4 +123,49 @@ export default {
     ::placeholder {
         color: #fff;
     }
+
+    .image {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-form-corner {
+       width: 400px;
+       height: 200px;
+       position: relative;
+    }
+
+    .black-block-1 {
+    width: 205px;
+    height: 74px;
+    background-color: #000;
+    position: absolute;
+    left: -10px;
+    top: -3px;
+    transform: rotate(-12deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .black-block-2 {
+    width: 355px;
+    height: 100px;
+    position: absolute;
+    right: 69px;
+    top: 69px;
+    background-color: #000;
+    transform: rotate(17deg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 80px;
+    font-weight: 700;
+  }
 </style>

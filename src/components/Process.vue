@@ -24,13 +24,13 @@
                 <div class="process-box">
                     <div class="prototype">
                         <div class="block-title">
-                            <span class="title">Прототип</span>
-                            <span class="number">01</span>
+                            <span class="title">Исследование</span>
+                            <span class="number">02</span>
                         </div>
                         <div class="block-list">
-                            <span class="name-list">- Брифинг</span>
-                            <span class="name-list">- Общение с заказчиком</span>
-                            <span class="name-list">- Прототипирование</span>
+                            <span class="name-list">- Поиск референсов</span>
+                            <span class="name-list">- Брейншторм</span>
+                            <span class="name-list">- Концепт</span>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                 </div> -->
             </div>
             <div class="second-block">
-                <div class="col-md-4 prototype">
+                <!-- <div class="col-md-4 prototype">
                     <div class="block-title">
                         <span class="title">Создание дизайна</span>
                         <span class="number">03</span>
@@ -66,6 +66,32 @@
                     <div class="block-list">
                         <span class="name-list">- Версия для планшета</span>
                         <span class="name-list">- Мобильная версия</span>
+                    </div>
+                </div> -->
+                <div class="process-box">
+                    <div class="prototype">
+                        <div class="block-title">
+                            <span class="title">Создание дизайна</span>
+                            <span class="number">03</span>
+                        </div>
+                        <div class="block-list">
+                            <span class="name-list">- Подбор шрифтов</span>
+                            <span class="name-list">- Подбор цветовой палитры</span>
+                            <span class="name-list">- Создание креативного UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-box">
+                    <div class="responsiveness">
+                        <div class="block-title">
+                            <span class="title">Отзывчивость</span>
+                            <span class="number">04</span>
+                        </div>
+                        <div class="block-list">
+                            <span class="name-list">- Версия для планшета</span>
+                            <span class="name-list">- Мобильная версия</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,9 +115,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .section-proccess { 
-        padding: 200px 0;
-    }
     .proccess-title {
         margin-bottom: 100px;
     }
@@ -109,6 +132,11 @@ export default {
         display: flex;
     }
 
+    .process-box {
+        padding: 0 15px;
+        flex: 0 1 420px;
+    }
+
     .second-block { 
         width: 100%;
         display: flex;
@@ -122,6 +150,11 @@ export default {
 
     .prototype { 
         padding: 30px 40px;
+        border: 1px solid #2e3a59;
+    }
+    
+    .responsiveness {
+        padding: 30px 40px 58px;
         border: 1px solid #2e3a59;
     }
 
