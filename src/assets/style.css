@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&display=swap');
+
 *{ 
     margin: 0; 
     padding: 0;
     outline: 0;
 }
-
-.container { 
-    max-width: 1380px;
+body{
+    font-family: 'Zilla Slab', serif;
+}
+@media (min-width: 1200px){
+    .container { 
+        max-width: 1380px;
+    }
 }

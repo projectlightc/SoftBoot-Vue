@@ -7,8 +7,11 @@
         </div>
         <div class="sites">
             <div class="container-site container">
-                <div class="sites-score-1">01.</div>
+            <div class="sites-counter-title">
+                 <div class="sites-score-1">01.</div>
                 <div class="sites-title title">Сайты</div>
+            </div>                       
+               
                 <div class="sites-description des">
             Создание дизайна, фирменного стиля, всевозможных логотипов и, конечно, разработка. На Тильде или ВордПресс — выбор всегда остаётся за вами.
                 </div>
