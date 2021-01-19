@@ -140,7 +140,7 @@ export default {
     height: 74px;
     background-color: #000;
     position: absolute;
-    left: -10px;
+    left: 5px;
     top: -3px;
     transform: rotate(-12deg);
     display: flex;

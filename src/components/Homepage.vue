@@ -45,6 +45,7 @@ export default {
   .soft-boost {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .digital-text span { 
