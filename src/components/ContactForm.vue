@@ -33,7 +33,7 @@
                     </form>
                 </div>
                 </div>
-                <div class="col-md-4 col-xs-4 image">
+                <div class="col-md-5 col-xs-5 image">
                     <div class="contact-form-corner">
                         <div class="corner-top black-block-1">Soft</div>
                         <div class="corner-bottom black-block-2">Boost</div>
@@ -127,6 +127,7 @@ export default {
     .image {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .contact-form-corner {
