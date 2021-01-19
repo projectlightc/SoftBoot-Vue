@@ -79,7 +79,7 @@ export default {
         color: #2E3A59;
     }
     .sites { 
-        padding: 40px 173px;
+        padding: 40px 0px;
         background-color: #F5DF4D;
     }
 
@@ -93,7 +93,7 @@ export default {
     }
 
     .mobile_app, .web_app { 
-        padding: 40px 173px;
+        padding: 40px 0;
     }
 
     .container-site {

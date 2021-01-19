@@ -1,14 +1,14 @@
 <template>
 <section class="section-soft-boost container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 col-xs-5 soft-boost">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-5 col-xs-5 soft-boost">
               <div class="digital-black-blocks">
                 <div class="black-block-1">Soft</div>
                 <div class="black-block-2">boost</div>
               </div>
-            </div>
-            <div class="col-md-7 col-xs-7 digital">
+        </div>
+        <div class="col-md-7 col-xs-7 digital">
                 <div class="digital-text"><span>Цифровое сердце <span class="yellow">вашего бизнеса</span></span></div>
                 <div class="digital-description">
                     <p>Качественно разработаем приложения на современных платформах и запустим его вместе .</p>
@@ -17,8 +17,11 @@
                     <button class="btn cooperate">Хочу сотрудничать!</button>
                 </div>
                 <!-- <marquee behavior="alternate" direction="right">Бегущая строка</marquee> -->
-            </div>
         </div>
+      </div>
+    </div>
+    <div class="information-block">
+          <marquee behavior="alternate" direction="right" class="text">Analytics Design Development Testing Management Analytics Design Development Testing Management</marquee>
     </div>
 </section>
 </template>
@@ -53,6 +56,22 @@ export default {
     font-weight: 700;
     line-height: 72px;
     font-family: 'Zilla Slab', serif;
+  }
+
+  .information-block {
+    padding: 26px 0;
+    margin-top: 70px;
+    /* transform: rotate(4.31deg); */
+    background-color: #2E3A59;
+  }
+
+  .information-block .text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
   }
 
   .yellow {
