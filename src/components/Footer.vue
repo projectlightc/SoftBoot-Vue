@@ -167,6 +167,7 @@ export default {
         display: flex;
         align-items: center;
         margin-top: 20px;
+        margin-left: -60px;
     }
 
     .icons span { 
