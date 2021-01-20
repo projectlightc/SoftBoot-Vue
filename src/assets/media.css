@@ -1,0 +1,71 @@
+@media screen and (max-width: 1200px) {
+    .digital-text[data-v-e6b76dc4] {
+        width: 100%;
+    }
+
+    .digital-text span[data-v-e6b76dc4] {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .sites-score-1[data-v-33b98fe9] {
+        margin-right: 0;
+    }
+
+    .title[data-v-33b98fe9] { 
+        max-width: inherit;
+    }
+
+    .acquainted-title h2[data-v-0c14b616] {
+        line-height: 50px;
+        font-size: 40px;
+    }
+
+    .why-us-title h2[data-v-b32b84f4] {
+        font-size: 40px;
+    }
+
+    .talk-button[data-v-61dd7a3d] {
+        padding: 10px 25px;
+    }
+
+    .logo[data-v-61dd7a3d] { 
+        padding: 10px 25px;
+    }
+
+    .email[data-v-40ab164b] { 
+        font-size: 30px;
+    }
+
+    .call[data-v-40ab164b] { 
+        font-size: 30px;
+    }
+
+    .contact-form-bottom-text[data-v-40ab164b] { 
+        margin-top: 100px;
+    }
+
+    .contact-button[data-v-67929df8] {
+        padding: 10px 20px;
+    }
+
+    .icons[data-v-40ab164b] {
+        margin-left: 0;
+    }
+
+    .contact-button[data-v-40ab164b] {
+        padding: 5px 12px;
+    }
+    
+    .proccess-title h2[data-v-bc20fe22] {
+        font-size: 40px;
+    }
+
+    .info-title h2[data-v-33b98fe9] { 
+        font-size: 40px;
+    }
+
+    .cooperate[data-v-e6b76dc4] {
+        padding: 12px 40px;
+    }
+}
