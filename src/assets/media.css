@@ -4,7 +4,7 @@
     }
 
     .digital-text span[data-v-e6b76dc4] {
-        font-size: 40px;
+        font-size: 50px;
         line-height: 50px;
     }
 
@@ -67,5 +67,246 @@
 
     .cooperate[data-v-e6b76dc4] {
         padding: 12px 40px;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link[data-v-61dd7a3d] {
+        padding-right: 0.5rem
+    }
+
+    .nav-link[data-v-61dd7a3d] {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-expand-md .navbar-nav .nav-link[data-v-61dd7a3d] {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .title[data-v-33b98fe9] {
+        margin-right: 20px;
+    }
+
+    .acquainted-title h2[data-v-0c14b616] {
+        text-align: center;
+    }
+
+    .image-block[data-v-0c14b616] {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .contact-form-title[data-v-67929df8] {
+        text-align: center;
+    }
+
+    input[type="tel"][data-v-67929df8] {
+        width: 100%;
+    }
+
+    .button[data-v-67929df8] {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-button[data-v-67929df8] {
+        width: 50%;
+    }
+
+    .icons[data-v-67929df8] {
+        justify-content: center;
+    }
+
+    .why-us-title h2[data-v-b32b84f4] {
+        text-align: center;
+    }
+
+    .why-us-image[data-v-b32b84f4] {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .first-block[data-v-bc20fe22] {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .second-block[data-v-bc20fe22]  {
+        flex-wrap: wrap;
+    }
+
+    .process-box[data-v-bc20fe22] {
+        padding: 15px 15px 0 15px;
+    }
+
+    .contact-form-title[data-v-40ab164b] {
+        text-align: center;
+    }
+
+    .button[data-v-40ab164b] {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons[data-v-40ab164b] {
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type="text"][data-v-40ab164b] {
+        width: 100%;
+    }
+    
+    input[type="tel"][data-v-40ab164b] {
+        width: 100%;
+    }
+
+    .col-md-5.col-xs-5.info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .connection[data-v-40ab164b] {
+        text-align: center;
+    }
+
+    .call[data-v-40ab164b] {
+        text-align: center;
+    }
+
+    .contact-form-bottom-text[data-v-40ab164b] {
+        width: 100%;
+    }
+
+    .proccess-title h2[data-v-bc20fe22] {
+        text-align: center;
+    }
+
+    .digital-text[data-v-e6b76dc4] {
+        text-align: center;
+    }
+
+    .digital-description[data-v-e6b76dc4] {
+        text-align: center;
+    }
+
+    .digital-button[data-v-e6b76dc4] {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container-site[data-v-33b98fe9] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-mobile_app[data-v-33b98fe9] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-web_app[data-v-33b98fe9] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .des[data-v-33b98fe9] {
+       margin-top: 30px; 
+    }
+
+    .contact-form-bottom-text[data-v-40ab164b] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-why-us[data-v-b32b84f4] {
+        padding: 140px 0;
+    }
+
+    .acquainted-title h2[data-v-0c14b616] {
+        text-align: left;
+    }
+
+    .image-block[data-v-0c14b616] {
+        justify-content: start;
+    }
+
+    .digital-text[data-v-e6b76dc4] {
+        text-align: left;
+    }
+
+    .digital-text span[data-v-e6b76dc4] {
+        font-size: 40px;
+    }
+
+    .digital-description[data-v-e6b76dc4] {
+        text-align: left;
+    }
+
+    .digital-button[data-v-e6b76dc4] {
+        justify-content: start;
+    }
+
+    .mobile_app-score-2[data-v-33b98fe9] {
+        margin-right: 0;
+    }
+
+    .web_app-score-3[data-v-33b98fe9] {
+        margin-right: 0;
+    }
+
+    .contact-form-title[data-v-67929df8] {
+        text-align: left;
+    }
+
+    .button[data-v-67929df8] {
+        justify-content: start;
+    }
+
+    .icons[data-v-67929df8] {
+        justify-content: start;
+    }
+
+    .why-us-title h2[data-v-b32b84f4] {
+        text-align: left;
+    }
+
+    .why-us-image[data-v-b32b84f4] {
+        justify-content: start;
+    }
+
+    .proccess-title h2[data-v-bc20fe22] {
+        text-align: left;
+    }
+
+    .contact-form-title[data-v-40ab164b] {
+        text-align: left;
+    }
+
+    .button[data-v-40ab164b] {
+        justify-content: start;
+    }
+
+    .icons[data-v-40ab164b] {
+        justify-content: start;
+    }
+
+    .col-md-5.col-xs-5.info {
+        justify-content: start;
+    }
+
+    .connection[data-v-40ab164b] {
+        text-align: left;
+    }
+
+    .call[data-v-40ab164b] {
+        text-align: left;
+        margin-top: 45px;
     }
 }
