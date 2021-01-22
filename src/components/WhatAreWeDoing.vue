@@ -4,7 +4,7 @@
             <div class="info-title container">
                 <h2>Что мы делаем?</h2>
             </div>
-            <div class="sites">
+            <div data-aos="example-anim2" class="sites">
                 <div class="container-site container">
                     <div class="sites-counter-title">
                         <div class="sites-score-1">01.</div>
@@ -15,7 +15,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mobile_app">
+            <div data-aos="example-anim2" class="mobile_app">
                 <div class="container-mobile_app container">
                     <div class="mobile-app-counter-title">
                         <div class="mobile_app-score-2">02.</div>
@@ -25,9 +25,8 @@
                         Ищите решение для смартфонов? Приложение для фитнеса, или площадка для продажи в онлайне? Мы сможем найти точки соприкосновения в каждой нише.
                     </div>
                 </div>
-                <div class="border"></div>
             </div>
-            <div class="web_app">
+            <div data-aos="example-anim2" class="web_app">
                 <div class="container-web_app container">
                     <div class="web-app-counter-title">
                         <div class="web_app-score-3">03.</div>
@@ -78,9 +77,16 @@ export default {
         letter-spacing: 0.015em;
         color: #2E3A59;
     }
-    .sites { 
+
+    [data-aos="example-anim2"] { 
         padding: 40px 0px;
+        background-color: #fff;
+    }
+
+    [data-aos="example-anim2"].aos-animate {
         background-color: #F5DF4D;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 40px;
     }
 
     .title {

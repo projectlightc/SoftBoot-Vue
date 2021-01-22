@@ -4,13 +4,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 col-xs-2 logo">лого</div>
-                    <div class="col-md-9 col-xs-9 menu">
-                        <nav class="navbar navbar-expand-md">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="col-md-10 col-xs-10 menu">
+                        <nav class="navbar navbar-expand-md sticky-top">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
 
-                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <div class="collapse navbar-collapse" id="collapseExample">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="#">Главная</a>
@@ -27,12 +27,11 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Контакты</a>
                                     </li>
-                                     <button class="btn talk-button">Пообщаемся ?</button>
                                 </ul>
+                                <button class="btn talk-button">Пообщаемся ?</button>
                             </div>
                            
                         </nav>
-                         
                     </div>
                     <!-- <div class="col-md-3 col-xs-3">
                        

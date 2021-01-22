@@ -8,7 +8,7 @@
         <div class="row">
             <div class="first-block">
                 <div class="process-box">
-                    <div class="prototype">
+                    <div data-aos="fade-right" class="prototype">
                         <div class="block-title">
                             <span class="title">Прототип</span>
                             <span class="number">01</span>
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="process-box">
-                    <div class="prototype">
+                    <div data-aos="fade-left" class="prototype">
                         <div class="block-title">
                             <span class="title">Исследование</span>
                             <span class="number">02</span>
@@ -34,42 +34,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 study">
-                    <div class="block-title">
-                        <span class="title">Исследование </span>
-                        <span class="number">02</span>
-                    </div>
-                    <div class="block-list">
-                        <span class="name-list">- Поиск референсов</span>
-                        <span class="name-list">- Брейншторм</span>
-                        <span class="name-list">- Концепт</span>
-                    </div>
-                </div> -->
             </div>
             <div class="second-block">
-                <!-- <div class="col-md-4 prototype">
-                    <div class="block-title">
-                        <span class="title">Создание дизайна</span>
-                        <span class="number">03</span>
-                    </div>
-                    <div class="block-list">
-                        <span class="name-list">- Подбор шрифтов</span>
-                        <span class="name-list">- Подбор цветовой палитры</span>
-                        <span class="name-list">- Создание креативного UI</span>
-                    </div>
-                </div>
-                <div class="col-md-4 study">
-                    <div class="block-title">
-                        <span class="title">Отзывчивость </span>
-                        <span class="number">04</span>
-                    </div>
-                    <div class="block-list">
-                        <span class="name-list">- Версия для планшета</span>
-                        <span class="name-list">- Мобильная версия</span>
-                    </div>
-                </div> -->
                 <div class="process-box">
-                    <div class="prototype">
+                    <div data-aos="fade-right" class="prototype">
                         <div class="block-title">
                             <span class="title">Создание дизайна</span>
                             <span class="number">03</span>
@@ -83,7 +51,7 @@
                 </div>
 
                 <div class="process-box">
-                    <div class="responsiveness">
+                    <div data-aos="fade-left" class="responsiveness">
                         <div class="block-title">
                             <span class="title">Отзывчивость</span>
                             <span class="number">04</span>
