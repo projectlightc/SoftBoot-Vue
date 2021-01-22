@@ -85,6 +85,22 @@
 }
 
 @media screen and (max-width: 767px) {
+
+    .block-title .title[data-v-bc20fe22]{
+        font-size: 21px;
+    }
+
+    .container-site[data-v-33b98fe9],
+    .container-mobile_app[data-v-33b98fe9],
+    .container-web_app[data-v-33b98fe9] {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .des { 
+        margin-top: 20px;
+    }
+
     .title[data-v-33b98fe9] {
         margin-right: 20px;
     }
@@ -201,6 +217,11 @@
 }
 
 @media screen and (max-width: 375px) {
+
+    .navbar-block-button-logo {
+        display: flex;
+    }
+
     .container-site[data-v-33b98fe9] {
         display: flex;
         flex-direction: column;

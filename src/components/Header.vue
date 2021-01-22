@@ -3,13 +3,23 @@
         <div class="haeder-section-container container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2 col-xs-2 logo">лого</div>
-                    <div class="col-md-10 col-xs-10 menu">
-                        <nav class="navbar navbar-expand-md sticky-top">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-
+                    <nav class="navbar navbar-expand-md sticky-top">
+                        <div class="col-md-2 col-xs-2">
+                            <div class="navbar-block-button-logo">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+                                            />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="logo">лого</div>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-xs-10 menu">
                             <div class="collapse navbar-collapse" id="collapseExample">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
@@ -30,17 +40,14 @@
                                 </ul>
                                 <button class="btn talk-button">Пообщаемся ?</button>
                             </div>
-                           
-                        </nav>
-                    </div>
-                    <!-- <div class="col-md-3 col-xs-3">
-                       
-                    </div> -->
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
 </template>
+
 
 <script>
 export default {
@@ -86,5 +93,14 @@ export default {
 
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1.87rem;
+    }
+
+    .button[data-v-61dd7a3d] {
+        background: #fff;
+        border: none;
+    }
+
+     .navbar-block-button-logo {
+        display: flex;
     }
 </style>
