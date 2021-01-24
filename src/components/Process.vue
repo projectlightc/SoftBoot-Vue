@@ -7,8 +7,8 @@
         </div>
         <div class="row">
             <div class="first-block">
-                <div class="process-box">
-                    <div data-aos="fade-right" class="prototype">
+                <div data-aos="fade-right" class="process-box">
+                    <div class="prototype">
                         <div class="block-title">
                             <span class="title">Прототип</span>
                             <span class="number">01</span>
@@ -21,8 +21,8 @@
                     </div>
                 </div>
 
-                <div class="process-box">
-                    <div data-aos="fade-left" class="prototype">
+                <div data-aos="fade-left" class="process-box">
+                    <div class="prototype">
                         <div class="block-title">
                             <span class="title">Исследование</span>
                             <span class="number">02</span>
@@ -36,8 +36,8 @@
                 </div>
             </div>
             <div class="second-block">
-                <div class="process-box">
-                    <div data-aos="fade-right" class="prototype">
+                <div data-aos="fade-right" class="process-box">
+                    <div class="prototype">
                         <div class="block-title">
                             <span class="title">Создание дизайна</span>
                             <span class="number">03</span>
@@ -50,8 +50,8 @@
                     </div>
                 </div>
 
-                <div class="process-box">
-                    <div data-aos="fade-left" class="responsiveness">
+                <div data-aos="fade-left" class="process-box">
+                    <div class="responsiveness">
                         <div class="block-title">
                             <span class="title">Отзывчивость</span>
                             <span class="number">04</span>
