@@ -4,8 +4,9 @@
     <div class="row">
         <div class="col-md-5 col-xs-5 soft-boost">
               <div class="digital-black-blocks">
-                <div class="black-block-1">Soft</div>
-                <div class="black-block-2">boost</div>
+                <div class="digital-softboot-block">
+                  <img src="../assets/images/test4.png" alt="softboot-logo">
+                </div>
               </div>
         </div>
         <div class="col-md-7 col-xs-7 digital">

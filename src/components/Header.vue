@@ -16,7 +16,9 @@
                                         </svg>
                                     </span>
                                 </button>
-                                <div class="logo">лого</div>
+                                <div class="logo">
+                                    <img src="../assets/images/softboot-logo.png" alt="softboot-logo"> 
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-10 col-xs-10 menu">
@@ -50,6 +52,7 @@
 
 
 <script>
+
 export default {
   name: 'Header',
   props: {
@@ -65,10 +68,8 @@ export default {
     }
 
     .logo { 
-        padding: 13px 75px;
-        background-color: #C4C4C4;
-        border: 1px solid #C4C4C4;
-        border-radius: 0;
+        width: 110px;
+        height: 64px;
     }
 
     .talk-button { 
