@@ -35,8 +35,7 @@
                 </div>
                 <div class="col-md-5 col-xs-5 image">
                     <div class="contact-form-corner">
-                        <div class="corner-top black-block-1">Soft</div>
-                        <div class="corner-bottom black-block-2">Boost</div>
+                        <img src="../assets/images/cf-logo.png" alt="softboot">
                     </div>
                     <!-- <div class="contact-form-image">
                         <img src="../assets/images/black-2.png" alt="soft-boost">

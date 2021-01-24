@@ -10,6 +10,12 @@
 body{
     font-family: 'Zilla Slab', serif;
 }
+
+
+.modal-backdrop {
+    z-index: 999;
+}
+
 @media (min-width: 1200px){
     .container { 
         max-width: 1380px;

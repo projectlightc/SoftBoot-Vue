@@ -17,7 +17,7 @@
                                     </span>
                                 </button>
                                 <div class="logo">
-                                    <img src="../assets/images/softboot-logo.png" alt="softboot-logo"> 
+                                    <img src="../assets/images/softboot-logo.png" alt="softboot-logo" />
                                 </div>
                             </div>
                         </div>
@@ -40,7 +40,42 @@
                                         <a class="nav-link" href="#">Контакты</a>
                                     </li>
                                 </ul>
-                                <button class="btn talk-button">Пообщаемся ?</button>
+                                <button type="button" class="btn talk-button" data-toggle="modal" data-target="#exampleModal">Пообщаемся ?</button>
+                            </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title">
+                                            <h5 id="exampleModalLabel">Оставьте контакты<br> и мы с вами свяжемся</h5>
+                                        </div>
+                        
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="form-group col-md-12 name">
+                                                    <input type="text" name="name" id="idName" placeholder="Имя">
+                                                </div>
+                                                <div class="form-group col-md-12 post">
+                                                    <input type="text" placeholder="Почта">
+                                                </div>
+                                                <div class="form-group col-md-12 phone">
+                                                    <input type="tel" placeholder="Телефон">
+                                                </div>
+                                                <div class="form-group col-md-12 button">
+                                                    <button class="btn btn-send">Отправить</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -49,6 +84,7 @@
         </div>
     </header>
 </template>
+
 
 
 <script>
@@ -104,4 +140,52 @@ export default {
      .navbar-block-button-logo {
         display: flex;
     }
+
+    .btn-send {
+        padding: 10px 77px;
+        background-color: #F5DF4D;
+    }
+
+    .form-group{
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-header {
+        border: none;
+    }
+
+    .modal-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    input[type="tel"] {
+        background: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #374567;
+        padding-bottom: 6px;
+    }
+
+    input[type="text"] {
+        background: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #374567;
+        padding-bottom: 6px;
+    }
+
+    ::placeholder {
+        color: #374567;
+    }
+
+    .button {
+        margin-top: 66px;
+    }
+
 </style>
