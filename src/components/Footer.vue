@@ -36,7 +36,7 @@
             </div>
             <div class="col-md-5 col-xs-5 info">
                 <div class="contact-form-info">
-                    <span class="connection">Мы всегда на связи</span>
+                    <span class="connection">Мы <span class="yellow">всегда</span> на связи</span>
                     <span class="call">+38 (063) 999 99 99</span>
                     <span class="email">soft.boost@gmail.com</span>
                 </div>
@@ -192,6 +192,10 @@ export default {
         border-bottom: 1px solid #fff;
         padding-bottom: 6px;
         width: 80%;
+    }
+
+    .yellow { 
+        color: #F5DF4D;
     }
 
     ::placeholder {

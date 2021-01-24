@@ -109,6 +109,11 @@ export default {
         color: #2E3A59;
     }
 
+    .item-title h4 { 
+        font-weight: 700;
+        color: #2E3A59;
+    }
+
     .why-us-image {
         margin-top: 40px;
     }
