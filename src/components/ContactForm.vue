@@ -135,6 +135,11 @@ export default {
        position: relative;
     }
 
+    .contact-form-corner img { 
+        width: 300px;
+        margin-top: -70px;
+    }
+
     .black-block-1 {
     width: 205px;
     height: 74px;

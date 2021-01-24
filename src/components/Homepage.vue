@@ -102,38 +102,7 @@ export default {
     width: 400px;
     height: 200px;
   }
-
-  .black-block-1 {
-    width: 205px;
-    height: 74px;
-    background-color: #000;
-    position: absolute;
-    left: 4px;
-    top: -5px;
-    transform: rotate(-12deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    font-size: 60px;
-    color: #fff;
-    font-weight: 700;
-  }
-
-  .black-block-2 {
-    width: 355px;
-    height: 100px;
-    position: absolute;
-    right: 69px;
-    top: 69px;
-    background-color: #000;
-    transform: rotate(17deg);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    font-size: 80px;
-    font-weight: 700;
+  .digital-softboot-block img { 
+    width: 300px;
   }
 </style>
