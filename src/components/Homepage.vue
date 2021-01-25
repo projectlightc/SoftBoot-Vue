@@ -62,7 +62,7 @@ export default {
   .information-block {
     padding: 26px 0;
     margin-top: 70px;
-    transform: rotate(4.31deg); 
+    /* transform: rotate(4.31deg);  */
     background-color: #2E3A59;
   }
 
