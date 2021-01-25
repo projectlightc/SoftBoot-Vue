@@ -24,7 +24,7 @@
                         <div class="col-md-10 col-xs-10 menu">
                             <div class="collapse navbar-collapse" id="collapseExample">
                                 <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link" href="#">Главная</a>
                                     </li>
                                     <li class="nav-item">
@@ -38,9 +38,12 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Контакты</a>
+                                    </li> -->
+                                    <li v-for="item in items" :key="item.text" class="nav-item">
+                                        <a class="nav-link" href="#">{{ item.text }}</a>
                                     </li>
                                 </ul>
-                                <button type="button" class="btn talk-button" data-toggle="modal" data-target="#exampleModal">Пообщаемся ?</button>
+                                <button type="button" class="btn talk-button" data-toggle="modal" data-target="#exampleModal">{{ buttonText }}</button>
                             </div>
                         </div>
 
@@ -50,7 +53,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <div class="modal-title">
-                                            <h5 id="exampleModalLabel">Оставьте контакты<br> и мы с вами свяжемся</h5>
+                                            <h5 id="exampleModalLabel">{{ exampleModalLabel }}<br>{{ call }}</h5>
                                         </div>
                         
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -70,7 +73,7 @@
                                                     <input type="tel" placeholder="Телефон">
                                                 </div>
                                                 <div class="form-group col-md-12 button">
-                                                    <button class="btn btn-send">Отправить</button>
+                                                    <button class="btn btn-send">{{ modal_btn }}</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -93,6 +96,22 @@ export default {
   name: 'Header',
   props: {
     msg: String
+  },
+
+  data: function () {
+      return {
+          items: [
+              { text: 'Главная' },
+              { text: 'О нас' }, 
+              { text: 'Почему мы ?' },
+              { text: 'Как работаем ?' },
+              { text: 'Контакты' }
+          ],
+          buttonText: 'Пообщаемся ?',
+          exampleModalLabel: 'Оставьте контакты',
+          call: 'и мы с вами свяжемся',
+          modal_btn: 'Отправить'
+      };
   }
 }
 </script>

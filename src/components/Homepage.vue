@@ -10,12 +10,12 @@
               </div>
         </div>
         <div class="col-md-7 col-xs-7 digital">
-                <div class="digital-text"><span>Цифровое сердце <span class="yellow">вашего бизнеса</span></span></div>
+                <div class="digital-text"><span>{{ digital_title }}<span class="yellow">{{ digital_yellow_text }}</span></span></div>
                 <div class="digital-description">
-                    <p>Качественно разработаем приложения на современных платформах и запустим его вместе .</p>
+                    <p>{{ digital_description }}</p>
                 </div>
                 <div class="digital-button">
-                    <button class="btn cooperate">Хочу сотрудничать!</button>
+                    <button class="btn cooperate">{{ digital_button }}</button>
                 </div>
                 <!-- <marquee behavior="alternate" direction="right">Бегущая строка</marquee> -->
         </div>
@@ -32,6 +32,14 @@ export default {
   name: 'Homepage',
   props: {
     msg: String
+  },
+  data: function () {
+    return {
+      digital_title: 'Цифровое сердце',
+      digital_yellow_text: 'вашего бизнеса',
+      digital_description: 'Качественно разработаем приложения на современных платформах и запустим его вместе .',
+      digital_button: 'Хочу сотрудничать!'
+    };
   }
 }
 </script>

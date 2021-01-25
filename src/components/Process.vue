@@ -3,7 +3,7 @@
 <section class="section-proccess container-fluid">
     <div class="container">
         <div class="proccess-title">
-            <h2>А процесс?</h2>
+            <h2>{{ message }}</h2>
         </div>
         <div class="row">
             <div class="first-block">
@@ -73,10 +73,16 @@
 </template>
 
 <script>
+
 export default {
   name: 'Process',
   props: {
     msg: String
+  },
+  data: function() {
+      return { 
+          message: 'А процесс ?'
+      };
   }
 }
 </script>
