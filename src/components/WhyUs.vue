@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-6 col-xs-6 why-us">
                 <div class="why-us-title">
-                    <h2>{{ why_us_title }}</h2>
+                    <h2>{{ $t('why_us_title') }}</h2>
                 </div>
                 <div class="why-us-image">
                     <img src="../assets/images/Checkmark.png" alt="why-us">
@@ -19,11 +19,11 @@
                     </div>
                     <div class="calendar-title-description">
                         <div class="item-title">
-                            <h4>{{ calendar_item_title }}</h4>
+                            <h4>{{ $t('calendar_item_title') }}</h4>
                         </div>
                         <div class="item-description">
                             <span>
-                                {{ calendar_item_description_1 }} <span class="bold-text">{{ calendar_item_description_2 }}</span>
+                                {{ $t('calendar_item_description_1') }} <span class="bold-text">{{ $t('calendar_item_description_2') }}</span>
                             </span>
                         </div>  
                     </div>
@@ -36,11 +36,11 @@
                     </div>
                     <div class="select-title-description">
                         <div class="item-title">
-                            <h4>{{ select_item_title }}</h4>
+                            <h4>{{ $t('select_item_title') }}</h4>
                         </div>
                         <div class="item-description">
                             <span>
-                                {{ select_item_description_1 }}<span class="bold-text">{{ select_item_description_2 }}</span>
+                                {{ $t('select_item_description_1') }}<span class="bold-text">{{ $t('select_item_description_2') }}</span>
                             </span>
                         </div>
                     </div>
@@ -53,11 +53,11 @@
                     </div>
                     <div class="coolicon-title-description">
                          <div class="item-title">
-                            <h4>{{ coolicon_title }}</h4>
+                            <h4>{{ $t('coolicon_title') }}</h4>
                         </div>
                         <div class="item-description">
                             <span>
-                                {{ coolicon_item_description_1 }}<span class="bold-text">{{ coolicon_item_description_2 }}</span>
+                                {{ $t('coolicon_item_description_1') }}<span class="bold-text">{{ $t('coolicon_item_description_2') }}</span>
                             </span>
                         </div>
                     </div>
@@ -70,11 +70,11 @@
                     </div>
                     <div class="coolicon-flag-title-description">
                         <div class="item-title">
-                            <h4>{{ coolicon_flag_title }}</h4>
+                            <h4>{{ $t('coolicon_flag_title') }}</h4>
                         </div>
                         <div class="item-description">
                             <span>
-                                {{ coolicon_flag_description_1 }}<span class="bold-text">{{ coolicon_flag_description_2 }}</span>
+                                {{ $t('coolicon_flag_description_1') }}<span class="bold-text">{{ $t('coolicon_flag_description_2') }}</span>
                             </span>
                         </div>
                     </div>

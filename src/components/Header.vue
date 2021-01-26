@@ -1,9 +1,9 @@
 <template>
-    <header class="header">
+    <header class="header sticky-top">
         <div class="haeder-section-container container-fluid">
             <div class="container">
                 <div class="row">
-                    <nav class="navbar navbar-expand-md sticky-top">
+                    <nav class="navbar navbar-expand-md">
                         <div class="col-md-2 col-xs-2">
                             <div class="navbar-block-button-logo">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -25,26 +25,30 @@
                             <div class="collapse navbar-collapse" id="collapseExample">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ li_item_1}}</a>
+                                        <a class="nav-link" href="#">{{ $t('li_item_1') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ li_item_2}}</a>
+                                        <a class="nav-link" href="#">{{ $t('li_item_2') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ li_item_3}}</a>
+                                        <a class="nav-link" href="#">{{ $t('li_item_3') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ li_item_4}}</a>
+                                        <a class="nav-link" href="#">{{ $t('li_item_4') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ li_item_5}}</a>
+                                        <a class="nav-link" href="#">{{ $t('li_item_5') }}</a>
                                     </li>
                                 </ul>
-                                <div>
-                                    <a href="#" @click="setLocale('en')">en</a>
-                                    <a href="#" @click="setLocale('ru')">ru</a>
+                                <div class="locale_switcher">
+                                    <div class="en">
+                                        <span><a href="#" @click="setLocale('en')" class="nav-eng">eng</a></span>
+                                    </div>
+                                    <div class="ru">
+                                        <span><a href="#" @click="setLocale('ru')" class="nav-ru">ru</a></span>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn talk-button" data-toggle="modal" data-target="#exampleModal">{{ buttonText }}</button>
+                                <button type="button" class="btn talk-button" data-toggle="modal" data-target="#exampleModal">{{ $t('buttonText') }}</button>
                             </div>
                         </div>
 
@@ -125,6 +129,7 @@ export default {
 <style scoped>
     .header { 
         padding: 25px 0 25px 0;
+        background: #fff;
     }
 
     .logo { 
@@ -210,6 +215,44 @@ export default {
 
     .button {
         margin-top: 66px;
+    }
+
+    .locale_switcher {
+        width: 80px;
+        height: 26px;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 60px;
+        border: 1px solid #cdcdcd;
+    }
+
+    .en span a { 
+        text-decoration: none;
+        color: #000;
+    }
+
+    .ru span a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .nav-eng {
+        border-right: 1px solid #cdcdcd;
+    }
+
+    .nav-eng,
+    .nav-ru {
+        padding: 3px 10px;
+    }
+
+    .nav-eng:hover, .nav-eng:focus,
+    .nav-ru:hover, .nav-ru:focus {
+        background: #F5DF4D;
+    }
+
+    .nav-eng:active,
+    .nav-ru:active {
+        background: #F5DF4D;
     }
 
 </style>

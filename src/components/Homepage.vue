@@ -15,14 +15,48 @@
                     <p>{{ $t('digital_description') }}</p>
                 </div>
                 <div class="digital-button">
-                    <button class="btn cooperate">{{ $t('digital_button') }}</button>
+                    <button class="btn cooperate" data-toggle="modal" data-target="#exampleModal">{{ $t('digital_button') }}</button>
                 </div>
-                <!-- <marquee behavior="alternate" direction="right">Бегущая строка</marquee> -->
+                
+                                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title">
+                                            <h5 id="exampleModalLabel">{{ exampleModalLabel }}<br>{{ call }}</h5>
+                                        </div>
+                        
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="form-group col-md-12 name">
+                                                    <input type="text" name="name" id="idName" placeholder="Имя">
+                                                </div>
+                                                <div class="form-group col-md-12 post">
+                                                    <input type="text" placeholder="Почта">
+                                                </div>
+                                                <div class="form-group col-md-12 phone">
+                                                    <input type="tel" placeholder="Телефон">
+                                                </div>
+                                                <div class="form-group col-md-12 button">
+                                                    <button class="btn btn-send">{{ modal_btn }}</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
         </div>
       </div>
     </div>
     <div class="information-block">
-          <marquee behavior="alternate" direction="right" class="text">Analytics Design Development Testing Management Analytics Design Development Testing Management</marquee>
+          <marquee behavior="alternate" class="marquee text"><span>{{ run_string }}</span></marquee>
     </div>
 </section>
 </template>
@@ -38,7 +72,8 @@ export default {
       digital_title: 'Цифровое сердце',
       digital_yellow_text: 'вашего бизнеса',
       digital_description: 'Качественно разработаем приложения на современных платформах и запустим его вместе .',
-      digital_button: 'Хочу сотрудничать!'
+      digital_button: 'Хочу сотрудничать!',
+      run_string: 'Analytics Design Development Testing Management Analytics Design Development Testing Management'
     };
   }
 }
@@ -113,4 +148,25 @@ export default {
   .digital-softboot-block img { 
     width: 300px;
   }
+
+  .marquee {
+   margin: 0 auto;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+.marquee span {
+   display: inline-block;
+   padding-left: 100%;
+   animation: marquee 10s linear infinite;
+}
+
+.marquee span:hover {
+   animation-play-state: paused;
+}
+
+@keyframes marquee {
+ 0%   { transform: translate(0, 0); }
+ 100% { transform: translate(-100%, 0); }
+}
 </style>

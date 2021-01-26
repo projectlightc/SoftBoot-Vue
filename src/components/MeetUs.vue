@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-5 col-xs-5 acquainted">
                     <div class="acquainted-title">
-                        <h2>{{ acquainted_title }}</h2>
+                        <h2>{{ $t('acquainted_title') }}</h2>
                     </div>
                     <div class="image-block">
                         <img src="../assets/images/Arrow_3.png" alt="acquainted">
@@ -12,16 +12,16 @@
                 </div>
                 <div class="col-md-7 col-xs-7 acquainted-text">
                     <div class="acquainted-first-text">
-                       <span class="bold-text">{{ acquainted_first_bold_text }}</span>, {{ acquainted_bit_text }}
+                       <span class="bold-text">{{ $t('acquainted_first_bold_text') }}</span>, {{ $t('acquainted_bit_text') }}
                     </div>
                     <div class="acquainted-second-text">
-                       <span class="bold-text">{{ acquainted_second_bold_text }}</span> <br />
-                        {{ acquainted_text_1 }} <br />
-                        {{ acquainted_text_2 }} <br />
-                        {{ acquainted_text_3 }} <br />
-                        {{ acquainted_text_4 }}<br />
-                        {{ acquainted_text_5 }}<br />
-                        <span class="bold-text">{{ acquainted_third_bold_text }}</span> 
+                       <span class="bold-text">{{ $t('acquainted_second_bold_text') }}</span> <br />
+                        {{ $t('acquainted_text_1') }} <br />
+                        {{ $t('acquainted_text_2') }} <br />
+                        {{ $t('acquainted_text_3') }} <br />
+                        {{ $t('acquainted_text_4') }}<br />
+                        {{ $t('acquainted_text_5') }}<br />
+                        <span class="bold-text">{{ $t('acquainted_third_bold_text') }}</span> 
 
                     </div>
                 </div>

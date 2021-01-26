@@ -2,33 +2,33 @@
     <section class="section-what-have-we-do-container container-fluid">
         <div class="info-container">
             <div class="info-title container">
-                <h2>{{ info_title }}</h2>
+                <h2>{{ $t('info_title') }}</h2>
             </div>
             <div data-aos="example-anim2" class="sites">
                 <div class="container-site container">
                     <div class="sites-counter-title">
-                        <div class="sites-score-1">{{ info_site_score }}</div>
-                        <div class="sites-title title">{{ info_site_title }}</div>
+                        <div class="sites-score-1">{{ $t('info_site_score') }}</div>
+                        <div class="sites-title title">{{ $t('info_site_title') }}</div>
                     </div>
-                    <div class="sites-description des"> {{ info_site_description }} </div>
+                    <div class="sites-description des"> {{ $t('info_site_description') }} </div>
                 </div>
             </div>
             <div data-aos="example-anim2" class="mobile_app">
                 <div class="container-mobile_app container">
                     <div class="mobile-app-counter-title">
-                        <div class="mobile_app-score-2">{{ mobile_app_score }}</div>
-                        <div class="mobile_app-title title">{{ mobile_app_title }}</div>
+                        <div class="mobile_app-score-2">{{ $t('mobile_app_score') }}</div>
+                        <div class="mobile_app-title title">{{ $t('mobile_app_title') }}</div>
                     </div>
-                    <div class="mobile_app-description des">{{ mobile_app_description }}</div>
+                    <div class="mobile_app-description des">{{ $t('mobile_app_description') }}</div>
                 </div>
             </div>
             <div data-aos="example-anim2" class="web_app">
                 <div class="container-web_app container">
                     <div class="web-app-counter-title">
-                        <div class="web_app-score-3">{{ web_app_score }}</div>
-                        <div class="web_app-title title">{{ web_app_title }}</div>
+                        <div class="web_app-score-3">{{ $t('web_app_score') }}</div>
+                        <div class="web_app-title title">{{ $t('web_app_title') }}</div>
                     </div>
-                    <div class="web_app-description des">{{ web_app_description }}</div>
+                    <div class="web_app-description des">{{ $t('web_app_description') }}</div>
                 </div>
             </div>
         </div>

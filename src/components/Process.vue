@@ -3,20 +3,20 @@
 <section class="section-proccess container-fluid">
     <div class="container">
         <div class="proccess-title">
-            <h2>{{ message }}</h2>
+            <h2>{{ $t('message') }}</h2>
         </div>
         <div class="row">
             <div class="first-block">
                 <div data-aos="fade-up" class="process-box">
                     <div class="prototype">
                         <div class="block-title">
-                            <span class="title">{{ prototype_block_title }}</span>
+                            <span class="title">{{ $t('prototype_block_title') }}</span>
                             <span class="number">01</span>
                         </div>
                         <div class="block-list">
-                            <span class="name-list">{{ prototype_list_item_1 }}</span>
-                            <span class="name-list">{{ prototype_list_item_2 }}</span>
-                            <span class="name-list">{{ prototype_list_item_3 }}</span>
+                            <span class="name-list">{{ $t('prototype_list_item_1') }}</span>
+                            <span class="name-list">{{ $t('prototype_list_item_2') }}</span>
+                            <span class="name-list">{{ $t('prototype_list_item_3') }}</span>
                         </div>
                     </div>
                 </div>
@@ -24,13 +24,13 @@
                 <div data-aos="fade-up" class="process-box">
                     <div class="prototype">
                         <div class="block-title">
-                            <span class="title">{{ study_block_title }}</span>
+                            <span class="title">{{ $t('study_block_title') }}</span>
                             <span class="number">02</span>
                         </div>
                         <div class="block-list">
-                            <span class="name-list">{{ study_list_item_1 }}</span>
-                            <span class="name-list">{{ study_list_item_2 }}</span>
-                            <span class="name-list">{{ study_list_item_3 }}</span>
+                            <span class="name-list">{{ $t('study_list_item_1') }}</span>
+                            <span class="name-list">{{ $t('study_list_item_2') }}</span>
+                            <span class="name-list">{{ $t('study_list_item_3') }}</span>
                         </div>
                     </div>
                 </div>
@@ -39,13 +39,13 @@
                 <div data-aos="fade-down" class="process-box">
                     <div class="prototype">
                         <div class="block-title">
-                            <span class="title">{{ create_block_title }}</span>
+                            <span class="title">{{ $t('create_block_title') }}</span>
                             <span class="number">03</span>
                         </div>
                         <div class="block-list">
-                            <span class="name-list">{{ create_list_item_1 }}</span>
-                            <span class="name-list">{{ create_list_item_2 }}</span>
-                            <span class="name-list">{{ create_list_item_3 }}</span>
+                            <span class="name-list">{{ $t('create_list_item_1') }}</span>
+                            <span class="name-list">{{ $t('create_list_item_2') }}</span>
+                            <span class="name-list">{{ $t('create_list_item_3') }}</span>
                         </div>
                     </div>
                 </div>
@@ -53,19 +53,19 @@
                 <div data-aos="fade-down" class="process-box">
                     <div class="responsiveness">
                         <div class="block-title">
-                            <span class="title">{{ responsiveness_block_title }}</span>
+                            <span class="title">{{ $t('responsiveness_block_title') }}</span>
                             <span class="number">04</span>
                         </div>
                         <div class="block-list">
-                            <span class="name-list">{{ responsiveness_list_item_1 }}</span>
-                            <span class="name-list">{{ responsiveness_list_item_2 }}</span>
+                            <span class="name-list">{{ $t('responsiveness_list_item_1') }}</span>
+                            <span class="name-list">{{ $t('responsiveness_list_item_2') }}</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="bottom-text">
-            <h2>{{ process_bottom_text_1 }}<br>{{ process_bottom_text_2 }}</h2>
+            <h2>{{ $t('process_bottom_text_1') }}<br>{{ $t('process_bottom_text_2') }}</h2>
         </div>
     </div>
 </section>

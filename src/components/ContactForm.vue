@@ -4,19 +4,19 @@
             <div class="row">
                 <div class="col-md-7 col-xs-7 contact-form">
                 <div class="contact-form-title">
-                    <span>{{ contact_form_title }}</span>
+                    <span>{{ $t('contact_form_title') }}</span>
                 </div>
                 <div class="contact-form__form">
                     <form action="#" method="#" id="contact-form">
                         <div class="row">
                             <div class="form-group col-md-4 name">
-                                <input type="text" :placeholder="placeholder_name">
+                                <input type="text" :placeholder="$t('placeholder_name')">
                             </div> 
                             <div class="form-group col-md-5 phone">
-                                <input type="tel" :placeholder="placeholder_number">
+                                <input type="tel" :placeholder="$t('placeholder_number')">
                             </div>
                             <div class="form-group col-md-4 button">
-                                <button class="contact-button">{{ form_button }}</button>
+                                <button class="contact-button">{{ $t('form_button') }}</button>
                             </div>
                             <div class="form-group col-md-4 icons">
                                <span class="facebook">
