@@ -24,25 +24,26 @@
                         <div class="col-md-10 col-xs-10 menu">
                             <div class="collapse navbar-collapse" id="collapseExample">
                                 <ul class="navbar-nav mr-auto">
-                                    <!-- <li class="nav-item">
-                                        <a class="nav-link" href="#">Главная</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">{{ li_item_1}}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">О нас</a>
+                                        <a class="nav-link" href="#">{{ li_item_2}}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Почему мы?</a>
+                                        <a class="nav-link" href="#">{{ li_item_3}}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Как работаем?</a>
+                                        <a class="nav-link" href="#">{{ li_item_4}}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Контакты</a>
-                                    </li> -->
-                                    <li v-for="item in items" :key="item.text" class="nav-item">
-                                        <a class="nav-link" href="#">{{ item.text }}</a>
+                                        <a class="nav-link" href="#">{{ li_item_5}}</a>
                                     </li>
                                 </ul>
+                                <div>
+                                    <a href="#" @click="setLocale('en')">en</a>
+                                    <a href="#" @click="setLocale('ru')">ru</a>
+                                </div>
                                 <button type="button" class="btn talk-button" data-toggle="modal" data-target="#exampleModal">{{ buttonText }}</button>
                             </div>
                         </div>
@@ -98,15 +99,19 @@ export default {
     msg: String
   },
 
+  methods : {
+      setLocale(locale) {
+          this.$i18n.locale = locale
+      }
+  },
+
   data: function () {
       return {
-          items: [
-              { text: 'Главная' },
-              { text: 'О нас' }, 
-              { text: 'Почему мы ?' },
-              { text: 'Как работаем ?' },
-              { text: 'Контакты' }
-          ],
+          li_item_1: 'Главная',
+          li_item_2: 'О нас',
+          li_item_3: 'Почему мы?',
+          li_item_4: 'Как работаем?',
+          li_item_5: 'Контакты',
           buttonText: 'Пообщаемся ?',
           exampleModalLabel: 'Оставьте контакты',
           call: 'и мы с вами свяжемся',

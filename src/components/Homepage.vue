@@ -10,12 +10,12 @@
               </div>
         </div>
         <div class="col-md-7 col-xs-7 digital">
-                <div class="digital-text"><span>{{ digital_title }}<span class="yellow">{{ digital_yellow_text }}</span></span></div>
+                <div class="digital-text"><span>{{ $t('digital_title') }}<span class="yellow">{{ $t('digital_yellow_text') }}</span></span></div>
                 <div class="digital-description">
-                    <p>{{ digital_description }}</p>
+                    <p>{{ $t('digital_description') }}</p>
                 </div>
                 <div class="digital-button">
-                    <button class="btn cooperate">{{ digital_button }}</button>
+                    <button class="btn cooperate">{{ $t('digital_button') }}</button>
                 </div>
                 <!-- <marquee behavior="alternate" direction="right">Бегущая строка</marquee> -->
         </div>

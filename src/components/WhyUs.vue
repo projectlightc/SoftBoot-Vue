@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-6 col-xs-6 why-us">
                 <div class="why-us-title">
-                    <h2>Почему мы?</h2>
+                    <h2>{{ why_us_title }}</h2>
                 </div>
                 <div class="why-us-image">
                     <img src="../assets/images/Checkmark.png" alt="why-us">
@@ -19,11 +19,11 @@
                     </div>
                     <div class="calendar-title-description">
                         <div class="item-title">
-                            <h4>Точно в срок</h4>
+                            <h4>{{ calendar_item_title }}</h4>
                         </div>
                         <div class="item-description">
                             <span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas, est exercitationem rerum quae repellendus consequuntur mollitia? Repellat, nisi. Quisquam, dolore. Commodi maxime minima natus ut atque laudantium voluptate exercitationem?
+                                {{ calendar_item_description_1 }} <span class="bold-text">{{ calendar_item_description_2 }}</span>
                             </span>
                         </div>  
                     </div>
@@ -36,11 +36,11 @@
                     </div>
                     <div class="select-title-description">
                         <div class="item-title">
-                            <h4>Точно в срок</h4>
+                            <h4>{{ select_item_title }}</h4>
                         </div>
                         <div class="item-description">
                             <span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas, est exercitationem rerum quae repellendus consequuntur mollitia? Repellat, nisi. Quisquam, dolore. Commodi maxime minima natus ut atque laudantium voluptate exercitationem?
+                                {{ select_item_description_1 }}<span class="bold-text">{{ select_item_description_2 }}</span>
                             </span>
                         </div>
                     </div>
@@ -53,11 +53,11 @@
                     </div>
                     <div class="coolicon-title-description">
                          <div class="item-title">
-                            <h4>Точно в срок</h4>
+                            <h4>{{ coolicon_title }}</h4>
                         </div>
                         <div class="item-description">
                             <span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas, est exercitationem rerum quae repellendus consequuntur mollitia? Repellat, nisi. Quisquam, dolore. Commodi maxime minima natus ut atque laudantium voluptate exercitationem?
+                                {{ coolicon_item_description_1 }}<span class="bold-text">{{ coolicon_item_description_2 }}</span>
                             </span>
                         </div>
                     </div>
@@ -70,11 +70,11 @@
                     </div>
                     <div class="coolicon-flag-title-description">
                         <div class="item-title">
-                            <h4>Точно в срок</h4>
+                            <h4>{{ coolicon_flag_title }}</h4>
                         </div>
                         <div class="item-description">
                             <span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas, est exercitationem rerum quae repellendus consequuntur mollitia? Repellat, nisi. Quisquam, dolore. Commodi maxime minima natus ut atque laudantium voluptate exercitationem?
+                                {{ coolicon_flag_description_1 }}<span class="bold-text">{{ coolicon_flag_description_2 }}</span>
                             </span>
                         </div>
                     </div>
@@ -90,8 +90,28 @@ export default {
   name: 'Header',
   props: {
     msg: String
+  },
+  data: function() {
+      return {
+          why_us_title: 'Почему мы?',
+          calendar_item_title: 'Точно в срок',
+          calendar_item_description_1: 'Мы знаем, как умеют обещать “менеджеры”, поэтому не перекладываем ответственность.',
+          calendar_item_description_2: 'Все процессы контроллируем лично, и несем за них ответственность.',
+          // select item 
+          select_item_title: 'Всегда на связи',
+          select_item_description_1: 'Это не просто слова, а реальные действия.',
+          select_item_description_2: 'Вы — наш приоритет, поэтому все планы подстраиваем так, чтобы удобно было Вам.',
+          // coolicon item
+          coolicon_title: 'Сотрудничество, которое порадует',
+          coolicon_item_description_1: 'Ждете от сотрудничества такой отдачи, будто делаем проект для себя? С нами вы получите больше, ведь главное',
+          coolicon_item_description_2: '— результат на 100% и еще чуть чуть сверху.',
+          // coolicon_flag item 
+          coolicon_flag_title: 'Ваши достижения — наша цель',
+          coolicon_flag_description_1: 'Наша цель — привести каждый проект к успеху, ведь',
+          coolicon_flag_description_2: 'вместе с вами растем и развиваемся и мы!'
+      };
   }
-}
+ }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -2,39 +2,33 @@
     <section class="section-what-have-we-do-container container-fluid">
         <div class="info-container">
             <div class="info-title container">
-                <h2>Что мы делаем?</h2>
+                <h2>{{ info_title }}</h2>
             </div>
             <div data-aos="example-anim2" class="sites">
                 <div class="container-site container">
                     <div class="sites-counter-title">
-                        <div class="sites-score-1">01.</div>
-                        <div class="sites-title title">Сайты</div>
+                        <div class="sites-score-1">{{ info_site_score }}</div>
+                        <div class="sites-title title">{{ info_site_title }}</div>
                     </div>
-                    <div class="sites-description des">
-                        Создание дизайна, фирменного стиля, всевозможных логотипов и, конечно, разработка. На Тильде или ВордПресс — выбор всегда остаётся за вами.
-                    </div>
+                    <div class="sites-description des"> {{ info_site_description }} </div>
                 </div>
             </div>
             <div data-aos="example-anim2" class="mobile_app">
                 <div class="container-mobile_app container">
                     <div class="mobile-app-counter-title">
-                        <div class="mobile_app-score-2">02.</div>
-                        <div class="mobile_app-title title">Мобильные приложения</div>
+                        <div class="mobile_app-score-2">{{ mobile_app_score }}</div>
+                        <div class="mobile_app-title title">{{ mobile_app_title }}</div>
                     </div>
-                    <div class="mobile_app-description des">
-                        Ищите решение для смартфонов? Приложение для фитнеса, или площадка для продажи в онлайне? Мы сможем найти точки соприкосновения в каждой нише.
-                    </div>
+                    <div class="mobile_app-description des">{{ mobile_app_description }}</div>
                 </div>
             </div>
             <div data-aos="example-anim2" class="web_app">
                 <div class="container-web_app container">
                     <div class="web-app-counter-title">
-                        <div class="web_app-score-3">03.</div>
-                        <div class="web_app-title title">Веб - приложения</div>
+                        <div class="web_app-score-3">{{ web_app_score }}</div>
+                        <div class="web_app-title title">{{ web_app_title }}</div>
                     </div>
-                    <div class="web_app-description des">
-                        Платформа для онлайн обучения? Или альтернативу тиндеру? Мы создадим для вас то, что вам нужно, вкладывая туда свои знания и часть души.
-                    </div>
+                    <div class="web_app-description des">{{ web_app_description }}</div>
                 </div>
             </div>
         </div>
@@ -46,6 +40,22 @@ export default {
   name: 'WhatAreWeDoing',
   props: {
     msg: String
+  },
+  data: function() {
+      return {
+          info_title: 'Что мы делаем ?',
+          info_site_score: '01.',
+          info_site_title: 'Сайты',
+          info_site_description: 'Создание дизайна, фирменного стиля, всевозможных логотипов и, конечно, разработка. На Тильде или ВордПресс — выбор всегда остаётся за вами.',
+          // данные для mobile_app блока
+          mobile_app_score: '02.',
+          mobile_app_title: 'Мобильные приложения',
+          mobile_app_description: 'Ищите решение для смартфонов? Приложение для фитнеса, или площадка для продажи в онлайне? Мы сможем найти точки соприкосновения в каждой нише.',
+          // данные для web_app блока
+          web_app_score: '03.',
+          web_app_title: 'Веб - приложения',
+          web_app_description: 'Платформа для онлайн обучения? Или альтернативу тиндеру? Мы создадим для вас то, что вам нужно, вкладывая туда свои знания и часть души.'
+      };
   }
 }
 </script>

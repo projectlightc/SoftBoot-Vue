@@ -5,19 +5,19 @@
         <div class="row">
             <div class="col-md-7 col-xs-7 contact-form">
                 <div class="contact-form-title">
-                    <span>Готовы пообщаться ?</span>
+                    <span>{{ footer_cf_title }}</span>
                 </div>
                 <div class="contact-form__form">
                     <form action="#" method="#" id="contact-form">
                         <div class="row">
                             <div class="form-group col-md-4 name">
-                                <input type="text" placeholder="Имя">
+                                <input type="text" :placeholder="footer_placeholder_cf_name">
                             </div> 
                             <div class="form-group col-md-5 phone">
-                                <input type="tel" placeholder="Телефон">
+                                <input type="tel" :placeholder="footer_placeholder_cf_number">
                             </div>
                             <div class="form-group col-md-5 button">
-                                <button class="contact-button">Перезвоните мне</button>
+                                <button class="contact-button">{{ footer_cf_button }}</button>
                             </div>
                             <div class="form-group col-md-4 icons">
                                <span class="facebook">
@@ -36,17 +36,17 @@
             </div>
             <div class="col-md-5 col-xs-5 info">
                 <div class="contact-form-info">
-                    <span class="connection">Мы <span class="yellow">всегда</span> на связи</span>
+                    <span class="connection">{{ connection_1 }}<span class="yellow">{{ connection_2 }}</span>{{ connection_3 }}</span>
                     <span class="call">+38 (063) 999 99 99</span>
                     <span class="email">soft.boost@gmail.com</span>
                 </div>
             </div>
             <div class="contact-form-bottom-text">
                 <div class="confident">
-                    <span>Политика конфеденциальности</span>
+                    <span>{{ confident_text }}</span>
                 </div>
                 <div class="softboot">
-                    <span>© “Soft Boost”. Все права защищены</span>
+                    <span>{{ softboot }}</span>
                 </div>
             </div>
         </div>
@@ -59,6 +59,22 @@ export default {
   name: 'Header',
   props: {
     msg: String
+  },
+  data: function() {
+      return {
+          footer_cf_title: 'Готовы пообщаться ?',
+          footer_placeholder_cf_name: 'Имя',
+          footer_placeholder_cf_number: 'Телефон',
+          footer_cf_button: 'Перезвоните мне',
+          // info block 
+          connection_1: 'Мы ',
+          connection_2: ' всегда',
+          connection_3: ' на связи',
+          // confident
+          confident_text: 'Политика конфеденциальности',
+          softboot: '© “Soft Boost”. Все права защищены'
+
+      };
   }
 }
 </script>

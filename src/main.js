@@ -7,12 +7,14 @@ import './assets/style.css';
 import './assets/media.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import { i18n } from './plugins/i18n'
 
 Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false
 
 new Vue({
+  i18n,
   created() {
     AOS.init({});
   },

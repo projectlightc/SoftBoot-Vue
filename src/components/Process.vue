@@ -10,13 +10,13 @@
                 <div data-aos="fade-up" class="process-box">
                     <div class="prototype">
                         <div class="block-title">
-                            <span class="title">Прототип</span>
+                            <span class="title">{{ prototype_block_title }}</span>
                             <span class="number">01</span>
                         </div>
                         <div class="block-list">
-                            <span class="name-list">- Брифинг</span>
-                            <span class="name-list">- Общение с заказчиком</span>
-                            <span class="name-list">- Прототипирование</span>
+                            <span class="name-list">{{ prototype_list_item_1 }}</span>
+                            <span class="name-list">{{ prototype_list_item_2 }}</span>
+                            <span class="name-list">{{ prototype_list_item_3 }}</span>
                         </div>
                     </div>
                 </div>
@@ -24,13 +24,13 @@
                 <div data-aos="fade-up" class="process-box">
                     <div class="prototype">
                         <div class="block-title">
-                            <span class="title">Исследование</span>
+                            <span class="title">{{ study_block_title }}</span>
                             <span class="number">02</span>
                         </div>
                         <div class="block-list">
-                            <span class="name-list">- Поиск референсов</span>
-                            <span class="name-list">- Брейншторм</span>
-                            <span class="name-list">- Концепт</span>
+                            <span class="name-list">{{ study_list_item_1 }}</span>
+                            <span class="name-list">{{ study_list_item_2 }}</span>
+                            <span class="name-list">{{ study_list_item_3 }}</span>
                         </div>
                     </div>
                 </div>
@@ -39,13 +39,13 @@
                 <div data-aos="fade-down" class="process-box">
                     <div class="prototype">
                         <div class="block-title">
-                            <span class="title">Создание дизайна</span>
+                            <span class="title">{{ create_block_title }}</span>
                             <span class="number">03</span>
                         </div>
                         <div class="block-list">
-                            <span class="name-list">- Подбор шрифтов</span>
-                            <span class="name-list">- Подбор цветовой палитры</span>
-                            <span class="name-list">- Создание креативного UI</span>
+                            <span class="name-list">{{ create_list_item_1 }}</span>
+                            <span class="name-list">{{ create_list_item_2 }}</span>
+                            <span class="name-list">{{ create_list_item_3 }}</span>
                         </div>
                     </div>
                 </div>
@@ -53,19 +53,19 @@
                 <div data-aos="fade-down" class="process-box">
                     <div class="responsiveness">
                         <div class="block-title">
-                            <span class="title">Отзывчивость</span>
+                            <span class="title">{{ responsiveness_block_title }}</span>
                             <span class="number">04</span>
                         </div>
                         <div class="block-list">
-                            <span class="name-list">- Версия для планшета</span>
-                            <span class="name-list">- Мобильная версия</span>
+                            <span class="name-list">{{ responsiveness_list_item_1 }}</span>
+                            <span class="name-list">{{ responsiveness_list_item_2 }}</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="bottom-text">
-            <h2>Никаких общих фраз, пустых обещаний и <br> равнодушного отношения</h2>
+            <h2>{{ process_bottom_text_1 }}<br>{{ process_bottom_text_2 }}</h2>
         </div>
     </div>
 </section>
@@ -81,7 +81,29 @@ export default {
   },
   data: function() {
       return { 
-          message: 'А процесс ?'
+          message: 'А процесс ?',
+          //prototype block items
+          prototype_block_title: 'Прототип',
+          prototype_list_item_1: '- Брифинг',
+          prototype_list_item_2: '- Общение с заказчиком',
+          prototype_list_item_3: '- Прототипирование',
+          //Исследование 
+          study_block_title: 'Исследование',
+          study_list_item_1: '- Поиск референсов',
+          study_list_item_2: '- Брейншторм',
+          study_list_item_3: '- Концепт',
+          // Создание сайтов
+          create_block_title: 'Создание дизайна',
+          create_list_item_1: '- Подбор шрифтов',
+          create_list_item_2: '- Подбор цветовой палитры',
+          create_list_item_3: '- Создание креативного UI',
+          //Отзывчивость 
+          responsiveness_block_title: 'Отзывчивость',
+          responsiveness_list_item_1: '- Версия для планшета',
+          responsiveness_list_item_2: '- Мобильная версия',
+          //Нижний текст 
+          process_bottom_text_1: 'Никаких общих фраз, пустых обещаний и ',
+          process_bottom_text_2: 'равнодушного отношения'
       };
   }
 }
