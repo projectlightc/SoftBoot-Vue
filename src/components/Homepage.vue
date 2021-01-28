@@ -10,7 +10,7 @@
               </div>
         </div>
         <div class="col-md-7 col-xs-7 digital">
-                <div class="digital-text"><span>{{ $t('digital_title') }}<span class="yellow">{{ $t('digital_yellow_text') }}</span></span></div>
+                <div class="digital-text"><span>{{ $t('digital_title') }}<span class="yellow"> <br>{{ $t('digital_yellow_text') }}</span></span></div>
                 <div class="digital-description">
                     <p>{{ $t('digital_description') }}</p>
                 </div>
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div class="yellow-blur-container"></div>
+    <div data-aos="fade-up" class="yellow-blur-container"></div>
     <div class="information-block">
           <marquee behavior="alternate" class="marquee text"><span>{{ run_string }}</span></marquee>
     </div>
@@ -86,9 +86,9 @@ export default {
     padding: 150px 0;
   }
 
-  .digital-text {
+  /* .digital-text {
     width: 665px;
-  }
+  } */
 
   .soft-boost {
     display: flex;

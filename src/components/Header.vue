@@ -40,6 +40,7 @@
                                         <a class="nav-link" href="#item_5">{{ $t('li_item_5') }}</a>
                                     </li>
                                 </ul>
+                                
                                 <!-- <div class="locale_switcher">
                                     <div class="en">
                                         <span class="active"><a href="#" @click="setLocale('en')" class="nav-eng">eng</a></span>
@@ -49,8 +50,8 @@
                                     </div>
                                 </div> -->
                                 <div class="site-nav">
-                                    <a href="#" @click="setLocale('en')" class="active">eng</a>
-                                    <a href="#" @click="setLocale('ru')" class="nav-link">ru</a>
+                                    <span class="localeEng" @click="setLocale('en')"><a href="#" >eng</a></span>
+                                    <span class="localeRu" @click="setLocale('ru')"><a href="#">ru</a></span>
                                 </div>
                                 <button type="button" class="btn talk-button" data-toggle="modal" data-target="#exampleModal">{{ $t('buttonText') }}</button>
                             </div>
@@ -62,7 +63,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <div class="modal-title">
-                                            <h5 id="exampleModalLabel">{{ exampleModalLabel }}<br>{{ call }}</h5>
+                                            <h5 id="exampleModalLabel">{{ $t('exampleModalLabel') }}<br>{{ $t('call') }}</h5>
                                         </div>
                         
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -73,16 +74,16 @@
                                         <form action="#">
                                             <div class="row">
                                                 <div class="form-group col-md-12 name">
-                                                    <input type="text" name="name" id="idName" placeholder="Имя">
+                                                    <input type="text" name="name" id="idName" :placeholder="$t('modal_name')">
                                                 </div>
                                                 <div class="form-group col-md-12 post">
-                                                    <input type="text" placeholder="Почта">
+                                                    <input type="text" :placeholder="$t('modal_post')">
                                                 </div>
                                                 <div class="form-group col-md-12 phone">
-                                                    <input type="tel" placeholder="Телефон">
+                                                    <input type="tel" :placeholder="$t('modal_phone')">
                                                 </div>
                                                 <div class="form-group col-md-12 button">
-                                                    <button class="btn btn-send">{{ modal_btn }}</button>
+                                                    <button class="btn btn-send">{{ $t('modal_btn') }}</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -123,8 +124,11 @@ export default {
           buttonText: 'Пообщаемся ?',
           exampleModalLabel: 'Оставьте контакты',
           call: 'и мы с вами свяжемся',
+          modal_name: 'Имя',
+          modal_post: 'Почта',
+          modal_phone: 'Телефон',
           modal_btn: 'Отправить',
-          isActive: false
+          showColor: false
       };
   }
 }
@@ -222,16 +226,6 @@ export default {
         margin-top: 66px;
     }
 
-    .site-nav .active { 
-        background-color: #F5DF4D;
-    }
-
-    .site-nav .active,
-    .site-nav .active:focus,
-    .site-nav .nav-link:focus { 
-        background: red;
-    }
-
     /* .locale_switcher {
         width: 80px;
         height: 26px;
@@ -290,5 +284,10 @@ export default {
     .nav-link:active {
         border-bottom: 20px solid rgba(190, 121, 13, 0.3);
     } */
+
+    .is-active { 
+        color: red;
+    }
+
 
 </style>

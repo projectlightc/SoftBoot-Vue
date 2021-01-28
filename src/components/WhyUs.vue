@@ -9,8 +9,8 @@
                 <div class="why-us-image">
                     <img src="../assets/images/Checkmark.png" alt="why-us">
                 </div>
-                <div class="pink-blur-container"></div>
-                <div class="blue-blur-container"></div>
+                <div data-aos="fade-up" class="pink-blur-container"></div>
+                <div data-aos="fade-down" class="blue-blur-container"></div>
             </div>
             <div class="col-md-6 col-xs-6 inner-section">
                 <div class="inner-section item">
@@ -162,5 +162,10 @@ export default {
         background: #6764FF;
         filter: blur(65px);
         margin: 20px 60px;
+    }
+
+    .bold-text {
+        color: #2E3A59;
+        font-weight: bold;
     }
 </style>

@@ -204,7 +204,7 @@ export default {
     .bottom-text { 
         margin: 200px 0;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 40px;
         line-height: 48px;
         text-align: center;

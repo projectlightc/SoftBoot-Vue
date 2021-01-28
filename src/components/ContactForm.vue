@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-7 col-xs-7 contact-form">
                 <div class="contact-form-title">
-                    <span>{{ $t('contact_form_title') }}</span>
+                    {{ $t('contact_form_title') }}<span class="yellow-text">{{ $t('yellow_text') }}</span>
                 </div>
                 <div class="contact-form__form">
                     <form action="#" method="#" id="contact-form">
@@ -55,7 +55,8 @@ export default {
   },
   data: function () {
       return {
-          contact_form_title: 'Готовы пообщаться ?',
+          contact_form_title: 'Сделаем крутой продукт вместе',
+          yellow_text: 'вместе',
           placeholder_name: 'Имя',
           placeholder_number: 'Телефон',
           form_button: 'Общаться'
@@ -148,38 +149,4 @@ export default {
         width: 300px;
         margin-top: -70px;
     }
-
-    .black-block-1 {
-    width: 205px;
-    height: 74px;
-    background-color: #000;
-    position: absolute;
-    left: 5px;
-    top: -3px;
-    transform: rotate(-12deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    font-size: 60px;
-    color: #fff;
-    font-weight: 700;
-  }
-
-  .black-block-2 {
-    width: 355px;
-    height: 100px;
-    position: absolute;
-    right: 69px;
-    top: 69px;
-    background-color: #000;
-    transform: rotate(17deg);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    font-size: 80px;
-    font-weight: 700;
-  }
 </style>
