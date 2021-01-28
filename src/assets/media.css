@@ -82,9 +82,19 @@
     .navbar-expand-md .navbar-nav .nav-link[data-v-61dd7a3d] {
         font-size: 10px;
     }
+
+    .talk-button[data-v-61dd7a3d] {
+        padding: 10px 16px;
+    }
+
+    .locale_switcher {
+        margin-right: 1px !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
+
+
 
     .block-title .title[data-v-bc20fe22]{
         font-size: 21px;
@@ -357,5 +367,10 @@
     .call[data-v-40ab164b] {
         text-align: left;
         margin-top: 45px;
+    }
+
+    .locale_switcher {
+        margin-right: 0 !important;
+        margin-bottom: 20px;
     }
 }
