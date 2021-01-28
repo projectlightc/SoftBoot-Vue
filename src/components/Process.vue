@@ -1,6 +1,6 @@
 <template>
 
-<section class="section-proccess container-fluid">
+<section class="section-proccess container-fluid" id="item_3">
     <div class="container">
         <div class="proccess-title">
             <h2>{{ $t('message') }}</h2>
@@ -64,6 +64,7 @@
                 </div>
             </div>
         </div>
+        <div class="pink-blur-container"></div>
         <div class="bottom-text">
             <h2>{{ $t('process_bottom_text_1') }}<br>{{ $t('process_bottom_text_2') }}</h2>
         </div>
@@ -115,7 +116,6 @@ export default {
         margin-bottom: 100px;
     }
     .proccess-title h2 { 
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: 700;
         font-size: 60px;
@@ -209,5 +209,12 @@ export default {
         line-height: 48px;
         text-align: center;
         color: #2E3A59;
+    }
+
+    .pink-blur-container {
+        width: 70px;
+        height: 70px;
+        background: #EDD6FF;
+        filter: blur(65px);
     }
 </style>

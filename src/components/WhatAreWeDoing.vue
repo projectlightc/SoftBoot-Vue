@@ -1,5 +1,5 @@
 <template>
-    <section class="section-what-have-we-do-container container-fluid">
+    <section class="section-what-have-we-do-container container-fluid" id="item_2">
         <div class="info-container">
             <div class="info-title container">
                 <h2>{{ $t('info_title') }}</h2>
@@ -69,7 +69,6 @@ export default {
 
     .info-title h2 { 
         margin-bottom: 60px;
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: 700;
         font-size: 60px;
@@ -79,7 +78,6 @@ export default {
 
     .des { 
         max-width: 500px;
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -124,7 +122,6 @@ export default {
     }
 
     .sites-score-1 {
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -135,7 +132,6 @@ export default {
     }
 
     .sites-title { 
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -149,7 +145,6 @@ export default {
     }
 
     .mobile_app-score-2 {
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -160,7 +155,6 @@ export default {
     }
 
     .mobile_app-title { 
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -174,7 +168,6 @@ export default {
     }
 
     .web_app-score-3 {
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -185,7 +178,6 @@ export default {
     }
 
     .web_app-title { 
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;

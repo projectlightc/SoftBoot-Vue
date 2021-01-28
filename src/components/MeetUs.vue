@@ -66,11 +66,9 @@ export default {
     .acquainted-text { 
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
     }
 
     .acquainted-title h2 {
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: 700;
         font-size: 60px;
@@ -79,7 +77,6 @@ export default {
     }
 
     .acquainted-first-text{
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -92,7 +89,6 @@ export default {
     }
 
     .acquainted-second-text {
-        font-family: 'Zilla Slab', serif; 
         margin-top: 20px;
         font-style: normal;
         font-weight: 400;

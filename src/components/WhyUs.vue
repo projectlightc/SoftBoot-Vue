@@ -1,5 +1,5 @@
 <template>
-<section class="section-why-us container-fluid">
+<section class="section-why-us container-fluid" id="item_4">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-6 why-us">
@@ -9,6 +9,8 @@
                 <div class="why-us-image">
                     <img src="../assets/images/Checkmark.png" alt="why-us">
                 </div>
+                <div class="pink-blur-container"></div>
+                <div class="blue-blur-container"></div>
             </div>
             <div class="col-md-6 col-xs-6 inner-section">
                 <div class="inner-section item">
@@ -121,7 +123,6 @@ export default {
     }
 
     .why-us-title h2 {
-        font-family: 'Zilla Slab', serif;
         font-style: normal;
         font-weight: 700;
         font-size: 60px;
@@ -145,5 +146,21 @@ export default {
 
     .icon {
         margin-right: 43px;
+    }
+
+    .pink-blur-container {
+        width: 70px;
+        height: 70px;
+        background: #DD4DF5;
+        filter: blur(65px);
+        margin: 10px 180px;
+    }
+
+    .blue-blur-container {
+        width: 70px;
+        height: 70px;
+        background: #6764FF;
+        filter: blur(65px);
+        margin: 20px 60px;
     }
 </style>

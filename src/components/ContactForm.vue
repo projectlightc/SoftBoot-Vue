@@ -1,5 +1,5 @@
 <template>
-    <section class="section-contact-form container-fluid">
+    <section class="section-contact-form container-fluid" id="item_5">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-xs-7 contact-form">
@@ -92,7 +92,7 @@ export default {
         margin-top: 20px;
     }
     .contact-button { 
-        padding: 15px 80px;
+        padding: 15px 65px;
         background-color: #F5DF4D;
         border: 1px solid #F5DF4D;
         border-radius: 0;

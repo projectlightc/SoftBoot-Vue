@@ -1,5 +1,5 @@
 <template>
-<section class="section-soft-boost container-fluid">
+<section class="section-soft-boost container-fluid" id="item_1">
   <div class="container">
     <div class="row">
         <div class="col-md-5 col-xs-5 soft-boost">
@@ -55,6 +55,7 @@
         </div>
       </div>
     </div>
+    <div class="yellow-blur-container"></div>
     <div class="information-block">
           <marquee behavior="alternate" class="marquee text"><span>{{ run_string }}</span></marquee>
     </div>
@@ -99,13 +100,12 @@ export default {
     font-size: 60px;
     font-weight: 700;
     line-height: 72px;
-    font-family: 'Zilla Slab', serif;
   }
 
   .information-block {
     padding: 26px 0;
     margin-top: 70px;
-    /* transform: rotate(4.31deg);  */
+    transform: rotate(4.31deg); 
     background-color: #2E3A59;
   }
 
@@ -116,6 +116,14 @@ export default {
     line-height: 48px;
     color: #FFFFFF;
     letter-spacing: 1px;
+  }
+
+  .yellow-blur-container {
+    width: 70px;
+    height: 70px;
+    background: #F5DF4D;
+    filter: blur(65px);
+    margin: 0 360px;
   }
 
   .yellow {

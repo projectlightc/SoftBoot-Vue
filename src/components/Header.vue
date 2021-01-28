@@ -25,28 +25,32 @@
                             <div class="collapse navbar-collapse" id="collapseExample">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ $t('li_item_1') }}</a>
+                                        <a class="nav-link" href="#item_1">{{ $t('li_item_1') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ $t('li_item_2') }}</a>
+                                        <a class="nav-link" href="#item_2">{{ $t('li_item_2') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ $t('li_item_3') }}</a>
+                                        <a class="nav-link" href="#item_3">{{ $t('li_item_3') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ $t('li_item_4') }}</a>
+                                        <a class="nav-link" href="#item_4">{{ $t('li_item_4') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">{{ $t('li_item_5') }}</a>
+                                        <a class="nav-link" href="#item_5">{{ $t('li_item_5') }}</a>
                                     </li>
                                 </ul>
-                                <div class="locale_switcher">
+                                <!-- <div class="locale_switcher">
                                     <div class="en">
-                                        <span><a href="#" @click="setLocale('en')" class="nav-eng">eng</a></span>
+                                        <span class="active"><a href="#" @click="setLocale('en')" class="nav-eng">eng</a></span>
                                     </div>
                                     <div class="ru">
                                         <span><a href="#" @click="setLocale('ru')" class="nav-ru">ru</a></span>
                                     </div>
+                                </div> -->
+                                <div class="site-nav">
+                                    <a href="#" @click="setLocale('en')" class="active">eng</a>
+                                    <a href="#" @click="setLocale('ru')" class="nav-link">ru</a>
                                 </div>
                                 <button type="button" class="btn talk-button" data-toggle="modal" data-target="#exampleModal">{{ $t('buttonText') }}</button>
                             </div>
@@ -119,7 +123,8 @@ export default {
           buttonText: 'Пообщаемся ?',
           exampleModalLabel: 'Оставьте контакты',
           call: 'и мы с вами свяжемся',
-          modal_btn: 'Отправить'
+          modal_btn: 'Отправить',
+          isActive: false
       };
   }
 }
@@ -217,7 +222,17 @@ export default {
         margin-top: 66px;
     }
 
-    .locale_switcher {
+    .site-nav .active { 
+        background-color: #F5DF4D;
+    }
+
+    .site-nav .active,
+    .site-nav .active:focus,
+    .site-nav .nav-link:focus { 
+        background: red;
+    }
+
+    /* .locale_switcher {
         width: 80px;
         height: 26px;
         display: flex;
@@ -245,14 +260,35 @@ export default {
         padding: 3px 10px;
     }
 
-    .nav-eng:hover, .nav-eng:focus,
-    .nav-ru:hover, .nav-ru:focus {
+    .nav-eng:hover,
+    .nav-ru:hover {
+        background: #F5DF4D;
+    }
+
+    span.active > a,
+    span.active > a:focus {
         background: #F5DF4D;
     }
 
     .nav-eng:active,
     .nav-ru:active {
         background: #F5DF4D;
+        } */
+    /* .nav-link {
+        display: inline-block;
+        margin-right: 20px;
+        color: #000;
+        font-weight: 600;
+        font-size: 1.1em;
+        line-height: 1.3;
+        text-decoration: none;
     }
+    .nav-link:hover, .nav-link:focus {
+        color: #be790d;
+        border-bottom: 10px solid rgba(190, 121, 13, 0.3);
+    }
+    .nav-link:active {
+        border-bottom: 20px solid rgba(190, 121, 13, 0.3);
+    } */
 
 </style>
