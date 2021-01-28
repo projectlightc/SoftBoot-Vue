@@ -232,7 +232,7 @@ export default {
     .locale_switcher {
         width: 82px;
         height: 23px;
-        margin-right: 100px;
+        margin-right: 50px;
     }
 
     .nav-link.active {
