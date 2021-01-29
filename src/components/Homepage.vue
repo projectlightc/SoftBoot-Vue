@@ -55,8 +55,8 @@
         </div>
       </div>
     </div>
-    <div data-aos="fade-up" class="yellow-blur-container"></div>
-    <div class="information-block">
+    <div data-aos="fade-up" class="yellow-blur-container"></div> 
+     <div class="information-block">
           <marquee behavior="alternate" class="marquee text"><span>{{ run_string }}</span></marquee>
     </div>
 </section>
@@ -157,7 +157,7 @@ export default {
     width: 300px;
   }
 
-  .marquee {
+  /* .marquee {
    margin: 0 auto;
    white-space: nowrap;
    overflow: hidden;
@@ -176,5 +176,74 @@ export default {
 @keyframes marquee {
  0%   { transform: translate(0, 0); }
  100% { transform: translate(-100%, 0); }
-}
+} */
+.b-marquee { 
+  font-family: 'Segoe UI', sans-serif; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  background: #333; 
+  color: #fff; 
+  padding: 10px; 
+  position: relative; 
+  margin-bottom: 10px; 
+} 
+ 
+.b-marquee__text { 
+  -webkit-animation: animMarquee 5s linear infinite; 
+  animation: animMarquee 5s linear infinite; 
+} 
+ 
+@-webkit-keyframes animMarquee { 
+  0% { 
+    -webkit-transform: translateX(0); 
+    transform: translateX(0); 
+  } 
+  100% { 
+    -webkit-transform: translateX(100%); 
+    transform: translateX(100%); 
+  } 
+} 
+ 
+@keyframes animMarquee { 
+  0% { 
+    -webkit-transform: translateX(0); 
+    transform: translateX(0); 
+  } 
+  100% { 
+    -webkit-transform: translateX(100%); 
+    transform: translateX(100%); 
+  } 
+} 
+ 
+ 
+/* text right to left*/ 
+ 
+/* .b-marquee--rtl {} 
+ 
+.b-marquee--rtl .b-marquee__text { 
+  -webkit-animation: animMarqueeRtl 5s linear infinite; 
+  animation: animMarqueeRtl 5s linear infinite; 
+} 
+ 
+@-webkit-keyframes animMarqueeRtl { 
+  0% { 
+    -webkit-transform: translateX(100%); 
+    transform: translateX(100%); 
+  } 
+  100% { 
+    -webkit-transform: translateX(0%); 
+    transform: translateX(0%); 
+  } 
+} 
+ 
+@keyframes animMarqueeRtl { 
+  0% { 
+    -webkit-transform: translateX(100%); 
+    transform: translateX(100%); 
+  } 
+  100% { 
+    -webkit-transform: translateX(0); 
+    transform: translateX(0); 
+  } 
+} */
 </style>
