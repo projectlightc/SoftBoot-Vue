@@ -8,8 +8,11 @@ import './assets/media.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { i18n } from './plugins/i18n'
+import jQuery from 'jquery'
+window.jQuery = window.$ = jQuery
 
 Vue.use(BootstrapVue);
+
 
 Vue.config.productionTip = false
 

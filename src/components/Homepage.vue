@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div data-aos="fade-up" class="yellow-blur-container"></div> 
+    <div data-aos="zoom-in" class="yellow-blur-container"></div> 
      <div class="information-block">
           <marquee behavior="alternate" class="marquee text"><span>{{ run_string }}</span></marquee>
     </div>
@@ -122,7 +122,7 @@ export default {
     width: 70px;
     height: 70px;
     background: #F5DF4D;
-    filter: blur(65px);
+    filter: blur(40px);
     margin: 0 360px;
   }
 

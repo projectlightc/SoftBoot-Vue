@@ -50,7 +50,7 @@ export const i18n = new VueI18n({
             acquainted_third_bold_text: 'We are your turbo-booster towards digitalization!',
             // contact form russian texts
             contact_form_title: 'Let’s have a great product',
-            yellow_text: 'together!',
+            yellow_text: ' together!',
             placeholder_name: 'e-mail',
             placeholder_number: 'phone',
             form_button: 'Get in touch',
@@ -142,7 +142,7 @@ export const i18n = new VueI18n({
             acquainted_third_bold_text: 'Мы - твой турбо-ускоритель в диджитализации',
             // contact form russian texts
             contact_form_title: 'Сделай крутой продукт',
-            yellow_text: 'вместе',
+            yellow_text: ' вместе',
             placeholder_name: 'Имя',
             placeholder_number: 'Телефон',
             form_button: 'Общаться',

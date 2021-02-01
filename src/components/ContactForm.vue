@@ -55,7 +55,7 @@ export default {
   },
   data: function () {
       return {
-          contact_form_title: 'Сделаем крутой продукт вместе',
+          contact_form_title: 'Сделаем крутой продукт',
           yellow_text: 'вместе',
           placeholder_name: 'Имя',
           placeholder_number: 'Телефон',
@@ -148,5 +148,9 @@ export default {
     .contact-form-corner img { 
         width: 300px;
         margin-top: -70px;
+    }
+
+    .yellow-text {
+        color: #F5DF4D;
     }
 </style>

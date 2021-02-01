@@ -9,8 +9,8 @@
                 <div class="why-us-image">
                     <img src="../assets/images/Checkmark.png" alt="why-us">
                 </div>
-                <div data-aos="fade-up" class="pink-blur-container"></div>
-                <div data-aos="fade-down" class="blue-blur-container"></div>
+                <div data-aos="zoom-in" class="pink-blur-container"></div>
+                <div data-aos="zoom-down" class="blue-blur-container"></div>
             </div>
             <div class="col-md-6 col-xs-6 inner-section">
                 <div class="inner-section item">
@@ -152,7 +152,7 @@ export default {
         width: 70px;
         height: 70px;
         background: #DD4DF5;
-        filter: blur(65px);
+        filter: blur(40px);
         margin: 10px 180px;
     }
 
@@ -160,7 +160,7 @@ export default {
         width: 70px;
         height: 70px;
         background: #6764FF;
-        filter: blur(65px);
+        filter: blur(40px);
         margin: 20px 60px;
     }
 

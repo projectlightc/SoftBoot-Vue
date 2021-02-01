@@ -54,10 +54,10 @@
                             <button type="button" class="btn talk-button" data-toggle="modal" data-target="#exampleModal">{{ $t('buttonText') }}</button>
                         </div>
                     </div>
-
+                    
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <div class="modal-title">
@@ -105,6 +105,8 @@
 
 <script>
 
+import $ from 'jquery'
+
 export default {
   name: 'Header',
   props: {
@@ -133,6 +135,18 @@ export default {
           modal_btn: 'Отправить',
           showColor: false
       };
+  },
+
+  mounted() {
+      $(document).ready(function () {
+        $(document).click(function (event) {
+        var click = $(event.target);
+        var _open = $(".navbar-collapse").hasClass("show");
+        if (_open === true && !click.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
+});
   }
 }
 </script>
@@ -142,6 +156,8 @@ export default {
     .header { 
         padding: 25px 0 25px 0;
         background: #fff;
+        position: fixed;
+        width: 100%;
     }
 
     .logo { 
@@ -252,6 +268,25 @@ export default {
         border: none;
     }
 
+    .modal-dialog {
+        margin: 195px auto;
+    }
     
+    .modal-header .close {
+        padding: 0;
+    }
+
+    .modal-header .close span {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    .modal.show .modal-dialog {
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: -240px;
+    }
 
 </style>

@@ -173,7 +173,7 @@ export default {
         margin-top: 20px;
     }
     .contact-button { 
-        padding: 15px 50px;
+        padding: 15px 65px;
         background-color: #F5DF4D;
         border: 1px solid #F5DF4D;
         border-radius: 0;
@@ -197,7 +197,7 @@ export default {
         border-right: none;
         border-bottom: 1px solid #fff;
         padding-bottom: 6px;
-        width: 80%;
+        width: 100%;
     }
 
     input[type="tel"] {

@@ -257,7 +257,7 @@
     }
 
     .logo[data-v-61dd7a3d] img{
-        margin-left: 50px;
+        margin-left: 75px;
     }
 
     .container-site[data-v-33b98fe9] {
@@ -372,5 +372,9 @@
     .locale_switcher {
         margin-right: 0 !important;
         margin-bottom: 20px;
+    }
+
+    .modal.show .modal-dialog[data-v-61dd7a3d] {
+        bottom: -130px;
     }
 }
