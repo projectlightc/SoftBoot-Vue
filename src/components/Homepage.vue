@@ -57,38 +57,28 @@
     </div>
     <div data-aos="zoom-in" class="yellow-blur-container"></div> 
      <div class="information-block">
-          <marquee behavior="alternate" class="marquee text"><span>{{ run_string }}</span></marquee>
+          <marquee-text :duration="30" behavior="alternate" class="marquee text"><span>{{ run_string }}</span></marquee-text>
     </div>
 </section>
 </template>
 
 <script>
 
-import $ from 'jquery'
 
 export default {
   name: 'Homepage',
   props: {
     msg: String
   },
+
   data: function () {
     return {
       digital_title: 'Цифровое сердце',
       digital_yellow_text: 'вашего бизнеса',
       digital_description: 'Качественно разработаем приложения на современных платформах и запустим его вместе .',
       digital_button: 'Хочу сотрудничать!',
-      run_string: 'Analytics Design Development Testing Management Analytics Design Development Testing Management'
+      run_string: 'Analytics Design Development Testing Management Analytics Design Development Testing Management '
     };
-  },
-
-  methods() {
-    $(function() { 
-      $('.marquee').marquee({ 
-        duration: 7000, 
-        startVisible: true, 
-        duplicated: true 
-      }); 
-    });
   }
 }
 </script>

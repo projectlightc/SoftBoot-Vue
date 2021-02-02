@@ -10,8 +10,11 @@ import 'aos/dist/aos.css'
 import { i18n } from './plugins/i18n'
 import jQuery from 'jquery'
 window.jQuery = window.$ = jQuery
+import MarqueeText from 'vue-marquee-text-component'
 
 Vue.use(BootstrapVue);
+Vue.use(MarqueeText);
+Vue.component('marquee-text', MarqueeText);
 
 
 Vue.config.productionTip = false
