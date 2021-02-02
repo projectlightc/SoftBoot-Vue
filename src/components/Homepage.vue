@@ -63,6 +63,9 @@
 </template>
 
 <script>
+
+import $ from 'jquery'
+
 export default {
   name: 'Homepage',
   props: {
@@ -76,6 +79,16 @@ export default {
       digital_button: 'Хочу сотрудничать!',
       run_string: 'Analytics Design Development Testing Management Analytics Design Development Testing Management'
     };
+  },
+
+  methods() {
+    $(function() { 
+      $('.marquee').marquee({ 
+        duration: 7000, 
+        startVisible: true, 
+        duplicated: true 
+      }); 
+    });
   }
 }
 </script>
@@ -157,27 +170,7 @@ export default {
     width: 300px;
   }
 
-  /* .marquee {
-   margin: 0 auto;
-   white-space: nowrap;
-   overflow: hidden;
-}
-
-.marquee span {
-   display: inline-block;
-   padding-left: 100%;
-   animation: marquee 10s linear infinite;
-}
-
-.marquee span:hover {
-   animation-play-state: paused;
-}
-
-@keyframes marquee {
- 0%   { transform: translate(0, 0); }
- 100% { transform: translate(-100%, 0); }
-} */
-.b-marquee { 
+/* .b-marquee { 
   font-family: 'Segoe UI', sans-serif; 
   white-space: nowrap; 
   overflow: hidden; 
@@ -213,37 +206,6 @@ export default {
     -webkit-transform: translateX(100%); 
     transform: translateX(100%); 
   } 
-} 
- 
- 
-/* text right to left*/ 
- 
-/* .b-marquee--rtl {} 
- 
-.b-marquee--rtl .b-marquee__text { 
-  -webkit-animation: animMarqueeRtl 5s linear infinite; 
-  animation: animMarqueeRtl 5s linear infinite; 
-} 
- 
-@-webkit-keyframes animMarqueeRtl { 
-  0% { 
-    -webkit-transform: translateX(100%); 
-    transform: translateX(100%); 
-  } 
-  100% { 
-    -webkit-transform: translateX(0%); 
-    transform: translateX(0%); 
-  } 
-} 
- 
-@keyframes animMarqueeRtl { 
-  0% { 
-    -webkit-transform: translateX(100%); 
-    transform: translateX(100%); 
-  } 
-  100% { 
-    -webkit-transform: translateX(0); 
-    transform: translateX(0); 
-  } 
-} */
+}  */
+
 </style>

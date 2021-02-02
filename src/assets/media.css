@@ -255,6 +255,10 @@
     .locale_switcher[data-v-61dd7a3d]{
         margin-bottom: 20px;
     }
+
+    .logo[data-v-61dd7a3d] img {
+        margin-left: 75px;
+    }
     
 }
 
@@ -384,5 +388,12 @@
 
     .modal.show .modal-dialog[data-v-61dd7a3d] {
         bottom: -130px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .logo[data-v-61dd7a3d] img {
+        margin-left: 50px;
     }
 }
