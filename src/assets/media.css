@@ -90,6 +90,10 @@
     .locale_switcher {
         margin-right: 1px !important;
     }
+
+    .navbar-expand-md .navbar-nav .nav-link[data-v-61dd7a3d][data-v-61dd7a3d] {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -246,6 +250,10 @@
     .digital-softboot-block { 
         display: flex;
         justify-content: center;
+    }
+
+    .locale_switcher[data-v-61dd7a3d]{
+        margin-bottom: 20px;
     }
     
 }

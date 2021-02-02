@@ -25,7 +25,7 @@
                         <div class="collapse navbar-collapse" id="collapseExample">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#item_1">{{ $t('li_item_1') }}</a>
+                                    <a class="nav-link actives" href="#item_1">{{ $t('li_item_1') }}</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#item_2">{{ $t('li_item_2') }}</a>
@@ -40,7 +40,7 @@
                                     <a class="nav-link" href="#item_5">{{ $t('li_item_5') }}</a>
                                 </li>
                             </ul>
-
+                        
                             <div class="locale_switcher">
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item">
@@ -146,6 +146,13 @@ export default {
             $(".navbar-toggler").click();
         }
     });
+});
+
+$(document).ready(function(){
+  $('ul li a').click(function(){
+    $('li a').removeClass("actives");
+    $(this).addClass("actives");
+});
 });
   }
 }
@@ -287,6 +294,15 @@ export default {
         right: 0;
         left: 0;
         bottom: -240px;
+    }
+
+    .actives {
+        border-bottom: 2px solid #F5DF4D;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link[data-v-61dd7a3d] {
+        padding: 15px 0 10px 15px;
+        margin-right: 25px;
     }
 
 </style>
